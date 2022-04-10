@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Samples</AssemblyName>
+    <RootNamespace>Samples</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\CSS\Shared\**" />
+    <Compile Remove="Assets\CSS\UserAuth\**" />
+    <Compile Remove="Assets\JS\Shared\**" />
+    <Compile Remove="Assets\JS\UserAuth\**" />
+    <Content Remove="Assets\CSS\Shared\**" />
+    <Content Remove="Assets\CSS\UserAuth\**" />
+    <Content Remove="Assets\JS\Shared\**" />
+    <Content Remove="Assets\JS\UserAuth\**" />
+    <EmbeddedResource Remove="Assets\CSS\Shared\**" />
+    <EmbeddedResource Remove="Assets\CSS\UserAuth\**" />
+    <EmbeddedResource Remove="Assets\JS\Shared\**" />
+    <EmbeddedResource Remove="Assets\JS\UserAuth\**" />
+    <None Remove="Assets\CSS\Shared\**" />
+    <None Remove="Assets\CSS\UserAuth\**" />
+    <None Remove="Assets\JS\Shared\**" />
+    <None Remove="Assets\JS\UserAuth\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="Autofac.Configuration" Version="6.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="Novell.Directory.Ldap.NETStandard" Version="3.6.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\CSS\" />
+    <Folder Include="Assets\HTML\" />
+    <Folder Include="Assets\JS\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\CSS\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+
+</Project>
